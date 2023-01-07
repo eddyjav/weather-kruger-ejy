@@ -1,0 +1,38 @@
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 600px;
+
+  margin: 20px;
+  border-radius: 20px;
+  background: #dde1e7;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.w-form-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-info-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.w-info-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  border-radius: 30px;
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+}

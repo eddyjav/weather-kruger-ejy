@@ -1,5 +1,6 @@
 import { useState } from "react";
-import styles from "./weatherForm.module.css";
+// import styles from "./weatherForm.module.css";
+import "../styles/styles.css";
 
 export default function WeatherForm({ onChangeCity }) {
   const [city, setCity] = useState("second");
@@ -19,8 +20,8 @@ export default function WeatherForm({ onChangeCity }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.container}>
-      <input type="text" onChange={onChange} className={styles.input} />
+    <form onSubmit={handleSubmit} className="w-form-container">
+      <input type="text" onChange={onChange} className="w-input" />
     </form>
   );
 }
