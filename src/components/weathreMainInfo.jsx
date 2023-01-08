@@ -1,18 +1,27 @@
 export default function WheaterMainInfo({ weather }) {
   console.log(weather?.location.lon + "  " + weather?.location.lat);
   return (
-    <div className="w-info-container">
-      <div>{weather?.location.name}</div>
-      <div>{weather?.location.country}</div>
+    <div className="w-info-container ">
+      <div>
+        <hr />
+        <h5>
+          {weather?.location.name} - {weather?.location.country}
+        </h5>
+        <hr />
+      </div>
       <div className="w-info-legend">
         <div>
-          <div>{weather?.current.condition.text}</div>
-          <div>{weather?.current.temp_c}°</div>
+          <div>
+            <h5>{weather?.current.condition.text}</h5>
+          </div>
+          <div>
+            <h5>{weather?.current.temp_c}°</h5>
+          </div>
         </div>
         <div>
           <img
             src={`http:${weather?.current.condition.icon}`}
-            width="128"
+            width="64"
             alt={weather?.current.condition.text}
           />
         </div>

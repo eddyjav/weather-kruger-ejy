@@ -38,7 +38,7 @@ export default function WeatherApp() {
   };
 
   return (
-    <div className="w-container ">
+    <div className="w-container">
       <WeatherForm onChangeCity={handleChanceCity} />
       <WheaterMainInfo weather={weather} />
     </div>
