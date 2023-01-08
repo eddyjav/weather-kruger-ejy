@@ -1,8 +1,13 @@
+import Rainbow from "./rainbow";
+
 export default function Loading() {
   return (
-    <div>
+    <div className="w-info-container">
       <div>
-        <div></div>
+        <div>
+          {/* <ReactSVG src="./rainbow.svg" /> */}
+          <Rainbow />
+        </div>
       </div>
     </div>
   );

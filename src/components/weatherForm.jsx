@@ -21,7 +21,7 @@ export default function WeatherForm({ onChangeCity }) {
 
   return (
     <form onSubmit={handleSubmit} className="w-form-container">
-      <input type="text" onChange={onChange} className="w-input" />
+      <input type="text" onChange={onChange} className="w-input" autoFocus />
     </form>
   );
 }

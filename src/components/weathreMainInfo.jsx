@@ -1,5 +1,5 @@
 export default function WheaterMainInfo({ weather }) {
-  console.log(weather?.location.lon + "  " + weather?.location.lat);
+  // console.log(weather?.location.lon + "  " + weather?.location.lat);
   return (
     <div className="w-info-container ">
       <div>
