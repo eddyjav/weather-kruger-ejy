@@ -11,6 +11,10 @@
     10px 10px 15px rgba(70, 70, 70, 0.12);
 }
 
+.no-border {
+  border: 0 !important;
+}
+
 .w-form-container {
   padding-top: 10px;
   display: flex;
@@ -33,6 +37,10 @@
 h5 {
   font-family: "Nunito";
   font-weight: 600;
+}
+
+.w-animated {
+  background-color: red;
 }
 
 .w-info-legend {

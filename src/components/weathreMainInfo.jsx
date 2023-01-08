@@ -1,9 +1,28 @@
+import clean from "../img/clean.gif";
+import rain from "../img/rain.gif";
+
 export default function WheaterMainInfo({ weather }) {
   // console.log(weather?.location.lon + "  " + weather?.location.lat);
+
+  function Animated() {
+    switch (!!weather) {
+      case (weather?.current.condition.text).includes("Clear"):
+        return <img src={clean} alt="123" width="64" />;
+        break;
+      case (weather?.current.condition.text).includes("rain"):
+        return <img src={rain} alt="123" width="64" />;
+        break;
+
+      default:
+        break;
+    }
+  }
+
   return (
     <div className="w-info-container ">
-      <div>
+      <div style={{ textAlign: "center" }}>
         <hr />
+        <Animated />
         <h5>
           {weather?.location.name} - {weather?.location.country}
         </h5>
