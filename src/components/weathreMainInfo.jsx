@@ -43,29 +43,31 @@ export default function WheaterMainInfo({ weather }) {
 
   return (
     <div className="w-info-container ">
-      <div style={{ textAlign: "center" }}>
-        <hr />
-        <Animated />
-        <h5>
-          {weather?.location.name} - {weather?.location.country}
-        </h5>
-        <hr />
-      </div>
-      <div className="w-info-legend">
-        <div>
-          <div>
-            <h5>{weather?.current.condition.text}</h5>
-          </div>
-          <div>
-            <h5>{weather?.current.temp_c}°</h5>
-          </div>
+      <div className="w-legend-container">
+        <div style={{ textAlign: "center" }}>
+          {/* <hr /> */}
+          <Animated />
+          <h5>
+            {weather?.location.name} - {weather?.location.country}
+          </h5>
+          <hr className="w-hr-info" />
         </div>
-        <div>
-          <img
-            src={`http:${weather?.current.condition.icon}`}
-            width="64"
-            alt={weather?.current.condition.text}
-          />
+        <div className="w-info-legend">
+          <div>
+            <div>
+              <h5>{weather?.current.condition.text}</h5>
+            </div>
+            <div>
+              <h5>{weather?.current.temp_c}°</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src={`http:${weather?.current.condition.icon}`}
+              width="64"
+              alt={weather?.current.condition.text}
+            />
+          </div>
         </div>
       </div>
 

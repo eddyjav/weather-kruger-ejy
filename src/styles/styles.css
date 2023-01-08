@@ -7,8 +7,20 @@
   margin: 20px;
   border-radius: 20px;
   background: #dde1e7;
-  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-    10px 10px 15px rgba(70, 70, 70, 0.12);
+  box-shadow: -10px -10px 11px rgba(255, 255, 255, 0.5),
+    10px 10px 11px rgba(94, 104, 121, 0.3);
+}
+.w-hr-info {
+  /* background-color: red; */
+  /* border-bottom: red; */
+  border: none;
+  height: 20px;
+  /* width: 90%; */
+  height: 50px;
+  margin-top: 0;
+  /* border-bottom: 1px solid #1f1209; */
+  box-shadow: 0 16px 20px -20px rgba(94, 104, 121, 0.78);
+  margin: -50px auto 10px;
 }
 
 .no-border {
@@ -43,6 +55,25 @@ h5 {
   margin-bottom: -20px;
 }
 
+.w-legend-container {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+  /* background-color: #ffffff; */
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+/* .w-legend-container::after {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: transparent;
+  border-radius: 30px;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45),
+    inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+} */
+
 .w-info-legend {
   display: flex;
   justify-content: center;
@@ -59,5 +90,8 @@ h5 {
 @media screen and (max-width: 800px) {
   .w-container {
     width: auto;
+  }
+  .w-legend-container {
+    width: 270px;
   }
 }
