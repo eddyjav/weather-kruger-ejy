@@ -3,6 +3,7 @@ import rain from "../img/rain.gif";
 import sunny from "../img/sunny.gif";
 import cloudy from "../img/cloudy.gif";
 import Fog from "./weatherIcons/fog";
+import Overcast from "./weatherIcons/overcast";
 
 export default function WheaterMainInfo({ weather }) {
   // console.log(weather?.location.lon + "  " + weather?.location.lat);
@@ -25,9 +26,14 @@ export default function WheaterMainInfo({ weather }) {
         return <img src={rain} alt="123" width="64" />;
         break;
       case (weather?.current.condition.text).includes("Mist"):
-        // return <img src={rain} alt="123" width="64" />;
-        console.log("ENTRO");
         return <Fog />;
+        break;
+      case (weather?.current.condition.text).includes("Overcast"):
+        return (
+          <div className="icon-w">
+            <Overcast />
+          </div>
+        );
         break;
 
       default:
