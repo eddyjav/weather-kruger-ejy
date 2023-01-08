@@ -1,5 +1,8 @@
 import clean from "../img/clean.gif";
 import rain from "../img/rain.gif";
+import sunny from "../img/sunny.gif";
+import cloudy from "../img/cloudy.gif";
+import Fog from "./weatherIcons/fog";
 
 export default function WheaterMainInfo({ weather }) {
   // console.log(weather?.location.lon + "  " + weather?.location.lat);
@@ -11,6 +14,20 @@ export default function WheaterMainInfo({ weather }) {
         break;
       case (weather?.current.condition.text).includes("rain"):
         return <img src={rain} alt="123" width="64" />;
+        break;
+      case (weather?.current.condition.text).includes("Sunny"):
+        return <img src={sunny} alt="123" width="64" />;
+        break;
+      case (weather?.current.condition.text).includes("Cloudy"):
+        return <img src={cloudy} alt="123" width="64" />;
+        break;
+      case (weather?.current.condition.text).includes("drizzle"):
+        return <img src={rain} alt="123" width="64" />;
+        break;
+      case (weather?.current.condition.text).includes("Mist"):
+        // return <img src={rain} alt="123" width="64" />;
+        console.log("ENTRO");
+        return <Fog />;
         break;
 
       default:
