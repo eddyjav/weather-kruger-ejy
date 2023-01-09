@@ -8,6 +8,12 @@
 
 <img src='src/img/mockup_Weather.png'>
 
+## ⚙️ Deployment
+
+For a live demo please visit the following link
+
+https://weather-kruger-ejy.vercel.app/
+
 ## 🛠 Build With
 
 - ⚛️ React
@@ -44,12 +50,6 @@ Start the server
 ```bash
   npm start
 ```
-
-## ⚙️ Deployment
-
-For a live demo please visit the following link
-
-https://weather-kruger-ejy.vercel.app/
 
 ## 👨‍💻 Authors
 
