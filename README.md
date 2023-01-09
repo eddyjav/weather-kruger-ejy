@@ -4,7 +4,7 @@
 
 <h1 align="center">Wather App</h1>
 
-- In this repository you will find the development of a weather app.
+- In this repository you will find the development of a weather app using **useEffect**.
 
 <img src='src/img/mockup_Weather.png'>
 
